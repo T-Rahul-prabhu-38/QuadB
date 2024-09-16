@@ -8,8 +8,10 @@
     ],
     "routes": [
         {
-            "src": "/（・*)",
-            "dest": "/"
+            
+            "src": "/api/*",
+            "dest": "-/index.js"
+            
         }
     ]
 }
