@@ -1,0 +1,253 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #0d111d;
+    color: #00c9c9;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+}
+img{
+    width: 25rem;
+    height: 100px;
+    
+}
+
+.header {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 46px;
+    font-weight:800;
+    font-family: Oswald, sans-serif;
+    width: 100%;
+}
+.nav-buttons {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+    
+}
+.nav-buttons select  {
+    background-color:rgb(46,50,65);
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.nav-buttons button  {
+    background-color:rgb(46,50,65);
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.nav-buttons button:hover {
+    background-color: #2a2e3b;
+}
+
+
+.dropdown {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+.dropdown select {
+    padding: 10px;
+    font-size: 16px;
+    margin: 0 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    -webkit-appearance: none; /* For Chrome, Safari, and Opera */
+    -moz-appearance: none;    /* For Firefox */
+    appearance: none;         /* Standard syntax */
+    border: 1px solid #ccc;    /* Add a border if needed */
+    padding: 10px;
+    background-color: white;   /* Optional: Change background */
+    background-image: none;
+}
+
+.dropdown .buy-btc {
+    padding: 10px 20px;
+    background-color: #33c3c4;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+.connect-telegram {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    
+}
+.connect-telegram .circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #00c9c9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #0d111d;
+    font-weight: bold;
+}
+.connect-telegram button {
+    background-color: #00c9c9;
+    color: #ffffff;
+    font-size: 16px;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 9px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.connect-telegram button:hover {
+    background-color: #00b3b3;
+}
+
+
+.toggle-switch {
+    width: 45px;
+    height: 20px;
+    background-color: #2b4cb9;
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+    border: 2px solid #139797;
+}
+.toggle-switch::before {
+    content: '';
+    width: 18px;
+    height: 18px;
+    background-color: #139797;
+    border-radius: 50%;
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    transition: all 0.3s;
+}
+/* style.css */
+body.light-mode {
+    background-color: rgb(255, 255, 255);
+    color: rgb(61,198,193)
+}
+
+body.dark-mode {
+    background-color:rgb(25,29,40);
+    color: rgb(61,198,193)
+}
+
+.toggle-switch {
+    display: flex;
+    align-items: center;
+}
+
+.toggle-switch input[type="checkbox"] {
+    display: none;
+    
+}
+
+.toggle-switch label {
+    cursor: pointer;
+    padding: 10px;
+    background-color: #292727;
+    border-radius: 20px;
+    position: relative;
+    width: 50px;
+}
+
+.toggle-switch label::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    width: 20px;
+    height: 20px;
+    background-color: #1bacac;
+    border-radius: 50%;
+    transform: translateY(-50%);
+    transition: left 0.3s;
+}
+
+.toggle-switch input[type="checkbox"]:checked + label::after {
+    left: calc(100% - 21px);
+}
+
+
+body.dark-mode table {
+    color: #fff; /* Light text color */
+}
+
+.table-container {
+    max-height: 35rem; /* Set a fixed height for the table container */
+    overflow-y: auto; /* Enable vertical scrolling */
+    margin-top: 20px; /* Add margin to push the table contents down */
+    border: 1px solid #2e3241; /* Add a border around the table */
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5); /* Add a shadow effect */
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #2e3241;
+}
+
+th {
+    background-color: #2e3241;
+    color: #5dc7c2;
+}
+
+tr:hover {
+    background-color: #454d67;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #2e3241;
+    color: #5dc7c2;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center; 
+    }
+    
+    .ticker {
+        margin-top: 10px;
+    }
+    
+    table {
+        font-size: 0.8em;
+    }
+}
+

@@ -1,0 +1,67 @@
+<html>
+<head>
+    <title>HodlInfo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body  class="light-mode">
+   <div class="nav">
+    <div class="header"><img src="./logo.png" alt=""></div>
+    
+    
+    <div class="nav-buttons">
+       
+            <select>
+                <option>INR</option>
+            </select>
+
+       
+            <select>
+                <option>BTC</option>
+                <option>ETH</option>
+                <option>USDT</option>
+                <option>XRP</option>
+                <option>TRX</option>
+                <option>DASH</option>
+                <option>ZEC</option>
+                <option>XEM</option>
+                <option>IOST</option>
+                <option>WIN</option>
+                <option>BTT</option>
+                <option>WRX</option>
+            </select>
+
+        <button>BUY BTC</button>
+    </div>
+    <div class="connect-telegram">
+        <button><i class="fab fa-telegram-plane"></i> Connect Telegram</button>
+        <div class="toggle-switch">
+            <input type="checkbox" id="themeToggle">
+        <label for="themeToggle"></label>
+        </div>
+    </div>
+   </div>
+    <!-- <div class="loading-circle"></div> -->
+    <main>
+        <div class="table-container">
+        <table id="cryptoTable">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Platform</th>
+                    <th>Last Traded Price</th>
+                    <th>Buy / Sell Price</th>
+                    <th>Difference</th>
+                    <th>Savings</th>
+                </tr>
+            </thead>
+            <tbody id="cryptoData"></tbody>
+        </table>
+    </div>
+
+        
+    </main>
+    <script src="./app.js"></script>
+    <script src="./toggle.js"></script>
+</body>
+</html>
